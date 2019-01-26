@@ -1,0 +1,6 @@
+<select [(ngModel)]="config.selected" (change)="selectionChanged($event.target.value)">
+    <option [value]="null" hidden disabled>Please select an option</option>
+    <option *ngFor="let element of config.elements" [value]="element.id">
+        {{ element.name }}
+    </option>
+</select>

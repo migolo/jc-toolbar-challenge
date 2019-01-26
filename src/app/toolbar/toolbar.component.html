@@ -1,0 +1,8 @@
+<div class="toolbarContainer">
+  <div class="toolbarElement" *ngFor="let element of config">
+    <toolbar-dropdown *ngIf="element.type == 'dropdown'" [config]="element"></toolbar-dropdown>
+    <toolbar-groupbutton *ngIf="element.type == 'groupbutton'" [config]="element"></toolbar-groupbutton>
+    <toolbar-actionbutton *ngIf="element.type == 'actionbutton'" [config]="element"></toolbar-actionbutton>
+    <toolbar-statebutton *ngIf="element.type == 'statebutton'" [config]="element"></toolbar-statebutton>
+  </div>
+</div>

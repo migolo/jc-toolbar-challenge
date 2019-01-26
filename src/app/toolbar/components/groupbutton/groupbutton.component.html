@@ -1,0 +1,3 @@
+<div class="{{'groupButtons ' + config.className}}">
+    <button *ngFor="let button of config.buttons" (click)="buttonPressed(button);" class="{{button.className}}" [ngClass]='{"active": config.active == button.id, "nonactive": config.active !== button.id}'>{{ button.text }}</button>
+</div>
