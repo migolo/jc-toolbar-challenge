@@ -1,5 +1,4 @@
 import { Component, NgZone } from '@angular/core';
-import { elementEnd } from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-root',
